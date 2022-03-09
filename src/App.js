@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+        import React from "react";
+        import { Route } from "react-router-dom";
+      /*   import   {Home ,  Users , NavBar , Create , About}  from "../Components"; */
+        import Home from "./Components/Home"
+        import NavBar from "./Components/NavBar"
+        import About from "./Components/About"
+        import Create from "./Components/Create"
+        import Users from "./Components/Users"
+        import Details from "./Components/Details"
+        
+        function App (){
+            return (
+                <React.Fragment>
+                    <NavBar/>
+                    <Route path = {'/Home'} > 
+                    <Home  name = {'Culino'} number={'7'}/></Route>
+                    <Route path = {'/Create'} component = {Create}></Route>
+                    <Route path = {'/About'} component = {About}></Route>
+                    <Route path = {'/Users'} component = {Users}></Route>
+                    <Route path = {'/Details/:id'} component =  {Details}></Route>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+                    
+                </React.Fragment>
 
-export default App;
+            );
+            }
+            
+            export default App;
+
