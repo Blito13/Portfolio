@@ -1,4 +1,41 @@
 import React from "react";
+import style from "./footer.module.css";
+
+const Footer = () => {
+  return (
+    <footer className={style.footer}>
+      {" "}
+       <br />
+      <a
+        target="_blank"
+        rol="link"
+        rel="noopener noreferrer"
+        href="https://github.com/Em3c2/eme-resume"
+        className={style.repo}
+      >
+        {/* {">"}{"<"} */}
+      </a>{" "}
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* import React from "react";
 import { createUser } from "../actions/actions";
 import { useDispatch } from "react-redux";
 export default function Create (){
@@ -60,6 +97,6 @@ export default function Create (){
             </form>
         </React.Fragment>
     )
-}
+} */
 
 

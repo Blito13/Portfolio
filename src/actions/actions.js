@@ -4,10 +4,11 @@ export function createUser(info){
     payload : info
   }
 }
-export function deleteId(id){
+export function deleteId(payload){
+  console.log(payload)
   return {
     type : "DELETE_USER",
-    payload : id
+    payload
   }
 
 }

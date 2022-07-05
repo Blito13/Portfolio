@@ -1,29 +1,40 @@
         import React from "react";
-        import { Route } from "react-router-dom";
+        import { Provider } from "react-redux";
       /*   import   {Home ,  Users , NavBar , Create , About}  from "../Components"; */
-        import Home from "./Components/Home"
-        import NavBar from "./Components/NavBar"
-        import About from "./Components/About"
-        import Create from "./Components/Create"
-        import Users from "./Components/Users"
-        import Details from "./Components/Details"
+      import { Route, Routes ,Switch } from "react-router-dom";
+      import "./style/style.css"
+      import { Navigate } from 'react-router-dom';
+        import Home from "./Components/Home/Home"
+        import NavBar from "./Components/NavBar/NavBar"
+        import Contact from "./Components/Contact/Contact"
+        import Footer from "./Components/Footer/Footer.jsx"
+        import generateStore from "./store/store";
         
         function App (){
-            return (
-                <React.Fragment>
-                    <NavBar/>
-                    <Route path = {'/Home'} > 
-                    <Home  name = {'Culino'} number={'7'}/></Route>
-                    <Route path = {'/Create'} component = {Create}></Route>
-                    <Route path = {'/About'} component = {About}></Route>
-                    <Route path = {'/Users'} component = {Users}></Route>
-                    <Route path = {'/Details/:id'} component =  {Details}></Route>
+            const store =  generateStore();
+            return ( 
+                <Provider  store={store}>
+                    {
+                    <NavBar lang = {'ES'}></NavBar>}
+                    
+                <Routes>
+        
+                     <Route path="/" element = {<Home lang={'ES'}/>}>  
+
+                            
+                     </Route>
+                     
+                </Routes>
+                       {<Contact  lang = {'ES'}></Contact>}
+
+                <Footer />
+              
+                
+                </Provider>
 
                     
-                </React.Fragment>
-
-            );
-            }
             
+
+            )   }
             export default App;
 
