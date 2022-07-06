@@ -101,7 +101,7 @@ const Contact = ({ lang }) => {
     console.log(message)
     e.preventDefault();
     console.log(message)
-    emailjs.sendForm("service_wru0wj7", "template_edig1om" , e.target, "VBt-uVVpNO3xMLsbw")
+    emailjs.sendForm()
     .then((res)=> {
       console.log(res.data)
     })
