@@ -19,7 +19,7 @@
                     
                 <Routes>
         
-                     <Route path="/" element = {<Home lang={'ES'}/>}>  
+                     <Route path="/" element = {<Home lang={'ES'} />}>  
 
                             
                      </Route>

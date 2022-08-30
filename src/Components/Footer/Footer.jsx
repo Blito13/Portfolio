@@ -10,7 +10,7 @@ const Footer = () => {
         target="_blank"
         rol="link"
         rel="noopener noreferrer"
-        href="https://github.com/Em3c2/eme-resume"
+        href=""
         className={style.repo}
       >
         {/* {">"}{"<"} */}

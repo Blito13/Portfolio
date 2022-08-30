@@ -3,8 +3,8 @@ import React, { useState , useRef} from "react";
 import Infobox from "../InfoBox/Infobox";
 import style from "./Contact.module.css";
 import emailjs from '@emailjs/browser'
-const Key1 = process.env.REACT_APP_ONE
-const Key2 = process.env.REACT_APP_TWO
+const Key1 =  "service_opmxpez"
+const Key2 =  "template_1ke7351"
 const Key4 = process.env.REACT_APP_FOUR
 console.log(Key1)
 console.log(Key2)
@@ -41,7 +41,7 @@ const Contact = ({ lang }) => {
     const keyState = e.target.name;
     const valueState = e.target.value;
     setMessage({ ...message, [keyState]: valueState });
-   
+   console.log(message)
   };
   
   const handleSubmit = (e) => {
@@ -59,56 +59,27 @@ const Contact = ({ lang }) => {
       setConfirm("exceeded");
       return;
     }
+    setConfirm("loading");
+    setSending(true);
     emailjs.sendForm(Key1, Key2 ,form.current, Key4)
     .then((res)=> {
-      console.log(res.data)
-    })
-    .catch((err)=>{
-      console.log(err)
-    })
-    setSending(true);
-    setConfirm("loading");
-    /* const scriptUrl =
-      "https://script.google.com/d/15PSFWvqzUbdBWeLgfKSPTM0_Toq17hZcq33KomZv7U2fogCQRgGATqoI/edit";
-    const data = JSON.stringify(message);
-    const config = {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    }; */
-    
-    
-    setMessage({
-      name: "",
-      email: "",
-      message: "",
-      honeypot: "",
-    });
-    
-    /* xios
-      .post(scriptUrl, data, config)
-      .then((res) => {
-        setConfirm(true);
-        console.log(res.data);
-      })
-      .catch((err) => {
-        setConfirm(false);
-        console.log(err);
+
+      console.log(res)
+      setConfirm(true);
+      setMessage({
+        name: "",
+        email: "",
+        message: "",
+        honeypot: "",
       });
-    setSending(false); */
-  };
-  /* const handleSend= (e) => {
-    console.log(message)
-    e.preventDefault();
-    console.log(message)
-    emailjs.sendForm()
-    .then((res)=> {
-      console.log(res.data)
     })
     .catch((err)=>{
       console.log(err)
     })
-  } */
+    setSending(false);
+   
+  };
+  
 
   return (
     <section>
@@ -178,17 +149,17 @@ const Contact = ({ lang }) => {
               <div className={style.btnContainer}>
                 {confirm === "loading" && (
                   <div className={style.confirm}>
-                    {lang === "EN" ? "Sending..." : "Enviando..."}
+                    {lang === "ES" ? "Sending..." : "Enviando..."}
                   </div>
                 )}
                 {confirm === true && (
                   <div className={style.confirm}>
-                    {lang === "EN" ? "Thanks!" : "Gracias!"}
+                    {lang === "ES" ? "Thanks!" : "Gracias!"}
                   </div>
                 )}
                 {confirm === "exceeded" && (
                   <div className={style.confirm}>
-                    {lang === "EN"
+                    {lang === "ES"
                       ? "Too many characters"
                       : "Demasiados carácteres"}
                   </div>
