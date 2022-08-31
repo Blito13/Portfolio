@@ -1,7 +1,7 @@
 /*<==== Variables colors*/
 
 :root {
-  --color1: #f1e4c0;
+  --color1: #cfc0f1;
   --color2: #e9f3bf;
   --color3: #cff6bc;
   --color4: #baf8c2;
@@ -16,6 +16,10 @@
   --attention: tomato;
   --print: invert(0%);
   --pixel: sepia(0%);
+  --divisions :
+  linear-gradient(315deg, rgba(195,45,34,1) 0%, rgba(253,187,45,1) 100%);
+
+  
 }
 
 /*<==== Class colors*/
@@ -45,11 +49,14 @@
 }
 
 .bgColor7 {
-  background-color: var(--color7);
+  background-color: var(--divisions);
 }
 
 .bgColorRight {
   background-color: var(--attention);
+}
+.bgColorDiv {
+  background: var(--divisions);
 }
 
 /*<==== Printable colors*/

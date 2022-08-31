@@ -11,6 +11,7 @@
   display: flex;
   height: 10px;
   width: 100%;
+  
 }
 .content {
   font-family: var(--content);
@@ -33,7 +34,8 @@
   color: var(--stroke);
 }
 
-@media (max-width: 550px) not print {
+@media not print {
+@media (max-width: 550px) {
   .container {
     max-width: 90%;
     margin: auto;
@@ -44,6 +46,7 @@
   .content {
     font-size: 1.2em;
     max-width: 90%;
+  }
   }
 }
 

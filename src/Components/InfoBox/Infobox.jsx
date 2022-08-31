@@ -5,7 +5,7 @@ import style from "./infobox.module.css";
 function Infobox({ color, subtitle, text }) {
   return (
     <section className={style.container}>
-      <div className={`${style.divisionBar} bgColor${color} `}></div>
+      <div className={`${style.divisionBar} bgColorDiv `}></div>
       <div>
         <h2 className={style.subtitle}>{subtitle}</h2>
         <div className={style.content}>
@@ -13,6 +13,7 @@ function Infobox({ color, subtitle, text }) {
             <Interweave content={text} />
           </div>
         </div>
+        
       </div>
     </section>
   );
