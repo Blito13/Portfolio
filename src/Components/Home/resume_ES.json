@@ -10,13 +10,19 @@
       "id": 3,
       "side": "left",
       "subtitle": "Experiencia laboral",
-      "text": "- <strong>Proyecto Individual en Henry Bootcamp </strong> 5 de abril – 12 de mayo <p>Diseñar  una  app en React Native con estilos en CSS,  Back desarrollado en Node con Express implementando Base de datos en PostgreSQL y Sequelize <p>Desarrollar App de recetas que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local  también permite crear recetas propias y mostrar en detalle las mismas.</p>- <strong>Proyecto Final  en Henry Bootcamp </strong> <br> 16  de mayo – 16 de junio <p> Esta experiencia me enseñó mucho a trabajar en equipos  de personas con diferentes ideas y coordinar en  grupo desarrollando el SCRUM <p> Diseñar un Ecommerce de zapatillas con estilos en CSS puro, junto con una pasarela de pago(mercadopago) gestion de stock de los productos  desde el frontEnd hacia la base de datos  por parte del admin con gran variabilidad de caracteristicas que hicieron de este proyecto todo un desafio  </p>"
+      "text": "- <strong>Proyecto Individual Henry Bootcamp </strong> 5 de abril – 12 de mayo  <p>Desarrollar App de recetas que te permite ordenar y filtrar los datos traídos de una API y de una base de datos local  también permite crear recetas propias y mostrar en detalle las mismas.</p>- <strong>Proyecto Final  en Henry Bootcamp </strong> <br> 16  de mayo – 16 de junio <p> Diseñar un Ecommerce de zapatillas con estilos en CSS puro, junto con una pasarela de pago(mercadopago) gestion de stock de los productos  desde el frontEnd hacia la base de datos  por parte del admin con gran variabilidad de caracteristicas que hicieron de este proyecto todo un desafio  </p>"
     },
     {
       "id": 4,
       "side": "left",
       "subtitle": "Educación",
       "text": "- Henry Bootcamp (800 hs) <p><ul className='resume_list'><li>Algoritmos, estructuras de datos, Javascript ES6+,  React, Redux, Node, Express, Postgres, Sequalize, Webpack,</li></ul>-  Integral Capacitando Instituto de formación técnica (90hs)(mar. 2021 - ago. 2021) <br> fundamentos de programacion e introduccion a base de datos "
+    },
+    {
+      "id": 5,
+      "side": "left",
+      "subtitle": "Capacitaciones ,Test y mas",
+      "text" : "<br><br>"
     },
     {
       "id": 6,

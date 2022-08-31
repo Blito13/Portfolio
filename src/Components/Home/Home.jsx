@@ -4,6 +4,7 @@ import Loading from "../Loading/Loading.jsx";
 //import axios from "axios";
 import Infobox from "../InfoBox/Infobox.jsx";
 import style from "./Home.module.css";
+
 import qr from "../../media/qr-code.svg";
 import EN from "./resume_EN.json";
 import ES from "./resume_ES.json";
@@ -42,16 +43,25 @@ const Home = ({ lang }) => {
                 if (e.side === "left") {
                   return (
                     <Infobox
-                      key={e.id}
-                      color={e.id}
-                      subtitle={e.subtitle}
-                      text={e.text}
+                    key={e.id}
+                    color={e.id}
+                    subtitle={e.subtitle}
+                    text={e.text}      
                     />
-                  );
-                } else {
-                  return false;
-                }
-              })}
+                    );
+                  } else {
+                    return false;
+                  }
+                })}
+                <div className={`${style.divisionBar} bgColorDiv `}>
+                </div>
+                <Carusel>
+                </Carusel>
+                <br></br>
+                {/* <div className={style.column}> */}
+                {/* <Carusel></Carusel> */}
+                {/* <Carusel></Carusel> */}
+                {/* </div> */}
           </div>
           <div className={style.column}>
                 {resume &&
@@ -72,7 +82,6 @@ const Home = ({ lang }) => {
             <div >
               <div>
               
-                <Carusel></Carusel>
               
                 
               </div>
