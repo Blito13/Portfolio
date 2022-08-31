@@ -1,5 +1,6 @@
 import style from "./Carusel.css"
-
+import qr from "../../media/Certificado.jpg"
+import asss from "../../media/Integral.jpg"
 
 const Carusel = () => {
     return(
@@ -19,7 +20,13 @@ const Carusel = () => {
     <li id="carousel__slide2"
         tabindex="0"
         class="carousel__slide">
-      <div class="carousel__snapper"></div>
+      {/* <div class="carousel__snapper"></div> */}
+          <img
+          class="carousel__snapper"
+          className= {style.yey}
+          src = {qr}
+          alt = "aversi">
+          </img>
       <a href="#carousel__slide1"
          class="carousel__prev">Go to previous slide</a>
       <a href="#carousel__slide3"
@@ -37,7 +44,13 @@ const Carusel = () => {
     <li id="carousel__slide4"
         tabindex="0"
         class="carousel__slide">
-      <div class="carousel__snapper"></div>
+      {/* <div class="carousel__snapper"></div> */}
+      <img
+          class="carousel__snapper"
+          className= {style.yey}
+          src = {asss}
+          alt = "aversi">
+          </img>
       <a href="#carousel__slide3"
          class="carousel__prev">Go to previous slide</a>
       <a href="#carousel__slide1"
