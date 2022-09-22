@@ -9,24 +9,21 @@
         import Contact from "./Components/Contact/Contact"
         import Footer from "./Components/Footer/Footer.jsx"
         import generateStore from "./store/store";
-        
+        import About from "./Components/About/About";
+        import Proyects from "./Components/Proyects/Proyects";
         function App (){
             const store =  generateStore();
             return ( 
                 <Provider  store={store}>
-                    {
-                    <NavBar lang = {'ES'}></NavBar>}
-                    
-                <Routes>
+                    {<NavBar lang = {'ES'} key = {0}></NavBar>}
         
-                     <Route path="/" element = {<Home lang={'ES'} />}>  
+                      {<Home lang={'ES'} key = {1} />} 
+               
+                       {<Contact  lang = {'ES'} key = {2}></Contact>}
+                        
+                        {<About lang = {'ES'} ket = {3}></About>}
 
-                            
-                     </Route>
-                     
-                </Routes>
-                       {<Contact  lang = {'ES'}></Contact>}
-
+                        {<Proyects lang = {'ES'} key= {4}></Proyects>}
                 <Footer />
               
                 

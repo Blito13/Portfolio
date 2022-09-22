@@ -181,8 +181,8 @@
     .contact {
       left: 0;
       bottom: 0;
-      top: 0;
-      /* margin: auto; */
+      top: 200;
+      margin: auto;
     }
     .closed:hover {
       animation-name: dance;

@@ -18,20 +18,7 @@ const Home = ({ lang }) => {
   const [itsLoading, setItsLoading] = useState(false);
    //const [resume, setResume] = useState(null);
 
-  /*   useEffect(() => {
-    setItsLoading(true);
-    axios
-      .get(`${URL}/api/lang/?query=${lang}`)
-      .then((res) => {
-        console.log(res)
-        setResume(res);
-        setItsLoading(false);
-      })
-      .catch((err) => {
-        console.log("Something was grong : ", err);
-      });
-  }, [lang]); */
-
+  
   return (
     <section>
       {itsLoading && <Loading />}
@@ -55,13 +42,10 @@ const Home = ({ lang }) => {
                 })}
                 <div className={`${style.divisionBar} bgColorDiv `}>
                 </div>
+                <br></br>
                 <Carusel>
                 </Carusel>
-                <br></br>
-                {/* <div className={style.column}> */}
-                {/* <Carusel></Carusel> */}
-                {/* <Carusel></Carusel> */}
-                {/* </div> */}
+              
           </div>
           <div className={style.column}>
                 {resume &&

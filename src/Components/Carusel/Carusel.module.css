@@ -1,0 +1,50 @@
+.container{
+  width: 100px;
+  height: 100px;
+  background: #373737;
+  overflow: hidden;
+  border-radius: 20px;
+  color: white;
+  margin: 0 auto;
+  /* position: relative; */
+  /* top: 100px; */
+}
+
+
+/* .frame {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  width: 600px;
+  height: 50px;
+  border-radius: 2px;
+  background: #373737;
+  color: white;
+  overflow: hidden
+} */
+.element {
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+  overflow: hidden
+}
+.carousel:active{
+  animation: carousel 8s ease-in-out infinite ;
+}
+@keyframes carousel {
+  0%, 20% {
+      transform: translateY(0);
+  }
+  25%, 45% {
+      transform: translateY(-200px)
+  }
+  50%, 70% {
+      transform: translateY(-400px)
+  }
+  75%, 95% {
+      transform: translateY(-600px)
+  }
+  100% {
+      transform: translateY(-800px)
+  }
+}

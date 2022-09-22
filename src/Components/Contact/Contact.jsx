@@ -37,7 +37,7 @@ const Contact = ({ lang }) => {
     document.documentElement.style.overflow = "auto";
     setConfirm(null);
   };
-  //¿Cómo crear formulario de contáctenos con ReactJs y emailJS?
+ 
   
   const handleChange = (e) => {
     e.preventDefault();
@@ -97,7 +97,7 @@ const Contact = ({ lang }) => {
           {lang === "ES" && "Contacto "}
           {lang === "EN" && "Contact  "}
           {contacto === "closed" && <i>↑</i>}
-        </h2>
+       </h2>
         {contacto === "open" && (
           <div className={style.containerContacto}>
             {lang === "ES" && (

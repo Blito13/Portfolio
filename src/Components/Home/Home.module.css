@@ -44,19 +44,10 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
-  .pixelFront {
-    background-image:url("../../media/pxArt.png");
-   
-    box-shadow: 10px 10px 10px 0 rgba(30, 30, 30, 0.3);
+  .Carusel{
+    overflow: hidden
   }
-  
-  .pixelBack {
-   
-    background-image:  url("../../media/Pablo.jpg");
-    transform: rotateY(180deg);
-    box-shadow: 10px 10px 10px 0 rgba(30, 30, 30, 0.3);
-  }
+
   
   @media (min-width: 800px) {
     .containerResume {
@@ -163,5 +154,6 @@
       display: none;
     }
   }
+
   
   

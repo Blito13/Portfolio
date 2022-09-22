@@ -12,7 +12,6 @@ function Infobox({ color, subtitle, text }) {
         <div className={style.content}>
           <div className={style.text}>
             <Interweave content={text} />
-            
           </div>
         </div>
         <div>
