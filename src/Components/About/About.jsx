@@ -42,9 +42,9 @@ const About =  ({lang}) => {
           <div className={style.containerContacto}>
             {lang === "ES" && (
               <Infobox
-                subtitle={"Mi soberano"}
+                subtitle={"Sobre mi"}
                 text={
-                  "Hola! asigne esta seccion para darme a conocer un poco mas , y hacer mas facil <br/>cualquier busqueda que coincida o no con mi perfil , en primer lugar me considero una persona creativa , <br/>artista desde pequeño , amo la musica , el reciclaje y los juegos.<br/>Soy cerrajero ,vivo entre detalles e infimidades.<br/> Mi camino en la programacion comenzo con la idea de aprender a crear juegos online la cual sigue en proceso en la actualidad .<br/>Considero al front end como un profundo arte , como una disciplina y como una forma de ganarme la vida.<br/>Siempre estoy buscando nuevos objetivos y desafios para catapultar mi carrera."
+                  "Hola! asigne esta seccion para darme a conocer un poco mas , y hacer mas facil <br/>cualquier busqueda que coincida o no con mi perfil , en primer lugar me considero una persona creativa , <br/>artista desde pequeño , amo la musica , el reciclaje y los juegos.<br/> Soy cerrajero ,vivo entre detalles e infimidades.<br/> Mi camino en la programacion comenzo con la idea de aprender a crear juegos online la cual sigue en proceso en la actualidad .<br/>Considero al front end como un profundo arte , como una disciplina y como una forma de ganarme la vida.<br/>Siempre estoy buscando nuevos objetivos y desafios para catapultar mi carrera."
                 }
               />
             )}
