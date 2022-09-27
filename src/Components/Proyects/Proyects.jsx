@@ -21,6 +21,7 @@ const Proyects = ({lang}) => {
         <section >
 
         <div
+         id="myH1"
           className={`${styles.contact} ${styles[contacto]}`}
           onClick={handleClickOpen}
           rol="button"
@@ -34,7 +35,13 @@ const Proyects = ({lang}) => {
        </h2>
 
 </div>
-     
+{contacto === "open" && (
+        <button
+          className={styles.btnClose}
+          onClick={handleClickClose}
+          value="coso"
+        ></button>
+      )}
        </section>
     )
 }

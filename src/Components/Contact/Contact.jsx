@@ -29,12 +29,16 @@ const Contact = ({ lang }) => {
     e.preventDefault();
     setContacto(contacto === "closed" ? "open" : "open");
     document.documentElement.style.overflow = "hidden";
+    document.getElementById("myH1").style.display = "none";
+    document.getElementById("myH2").style.display = "none";
   };
 
   const handleClickClose = (e) => {
     e.preventDefault();
     setContacto(contacto === "open" ? "closed" : "closed");
     document.documentElement.style.overflow = "auto";
+    document.getElementById("myH1").style.display = "";
+    document.getElementById("myH2").style.display = "";
     setConfirm(null);
   };
  

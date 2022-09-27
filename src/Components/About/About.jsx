@@ -8,12 +8,16 @@ const About =  ({lang}) => {
         e.preventDefault();
         setContacto(contacto === "closed" ? "open" : "open");
         document.documentElement.style.overflow = "hidden";
+        document.getElementById("myH1").style.display = "none";
+       
+ 
       };
     
       const handleClickClose = (e) => {
         e.preventDefault();
         setContacto(contacto === "open" ? "closed" : "closed");
         document.documentElement.style.overflow = "auto";
+        document.getElementById("myH1").style.display = "flex";
         setConfirm(null);
       };
      
@@ -21,6 +25,7 @@ const About =  ({lang}) => {
        <section >
 
         <div
+          id="myH2"
           className={`${style.contact} ${style[contacto]}`}
           onClick={handleClickOpen}
           rol="button"
@@ -34,7 +39,13 @@ const About =  ({lang}) => {
        </h2>
 
 </div>
-     
+{contacto === "open" && (
+        <button
+          className={style.btnClose}
+          onClick={handleClickClose}
+          value="coso"
+        ></button>
+      )}
        </section>
 
     )
