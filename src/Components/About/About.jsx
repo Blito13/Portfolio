@@ -2,6 +2,7 @@ import React from "react";
 import style from "./About.module.css";
 import { useState } from "react";
 import Infobox from "../InfoBox/Infobox";
+import photogr from "../../media/Pablo.jpg";
 const About =  ({lang}) => {
     const [confirm, setConfirm] = useState(null);
     const [contacto, setContacto] = useState("closed");
@@ -43,11 +44,23 @@ const About =  ({lang}) => {
             {lang === "ES" && (
               <Infobox
                 subtitle={"Sobre mi"}
-                text={
-                  "Hola! asigne esta seccion para darme a conocer un poco mas , y hacer mas facil <br/>cualquier busqueda que coincida o no con mi perfil , en primer lugar me considero una persona creativa , <br/>artista desde pequeño , amo la musica , el reciclaje y los juegos.<br/> Soy cerrajero ,vivo entre detalles e infimidades.<br/> Mi camino en la programacion comenzo con la idea de aprender a crear juegos online la cual sigue en proceso en la actualidad .<br/>Considero al front end como un profundo arte , como una disciplina y como una forma de ganarme la vida.<br/>Siempre estoy buscando nuevos objetivos y desafios para catapultar mi carrera."
+                text= 
+                {
+                 "Hola! asigne esta seccion para darme a conocer un poco mas , y hacer mas facil <br/>cualquier busqueda que coincida o no con mi perfil , en primer lugar me considero una persona creativa , <br/>artista desde pequeño , amo la musica , el reciclaje y los juegos.<br/> Soy cerrajero ,vivo entre detalles e infimidades.<br/> Mi camino en la programacion comenzo con la idea de aprender a crear juegos web la cual sigue en proceso en la actualidad .<br/>Considero al front end como un profundo arte , como una disciplina y algo delo que me gustaria poder vivir.<br/>Siempre estoy buscando nuevos objetivos y desafios para catapultar mi carrera."
                 }
               />
-            )}
+              )
+              
+              
+              
+              }
+
+
+            
+                <h2>more
+                </h2>
+              <img > </img>
+             
             </div>)}
 </div>
 {contacto === "open" && (
