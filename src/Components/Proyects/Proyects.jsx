@@ -28,13 +28,19 @@ const Proyects = ({lang}) => {
           tabIndex="-1"
         >
           <h2 className={styles.h2Contact}>
-          {lang === "ES" && "Proyects videos"}
+          {lang === "ES" && "videos"}
           {lang === "EN" && "Contact  "}
           {contacto === "closed" && <i>↑</i>}
        </h2>
 
 </div>
-     
+      {contacto === "open" && (
+        <button
+          className={styles.btnClose}
+          onClick={handleClickClose}
+          value="coso"
+        ></button>
+      )}
        </section>
     )
 }

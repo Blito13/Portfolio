@@ -34,6 +34,13 @@ const About =  ({lang}) => {
        </h2>
 
 </div>
+{contacto === "open" && (
+        <button
+          className={style.btnClose}
+          onClick={handleClickClose}
+          value="coso"
+        ></button>
+      )}
      
        </section>
 
