@@ -1,4 +1,5 @@
 import style from "./Carusel.module.css"
+import React from "react"
 import qr from "../../media/Certificado.jpg"
 import asss from "../../media/Integral.jpg"
 import { useEffect } from "react"
