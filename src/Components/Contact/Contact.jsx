@@ -7,7 +7,7 @@ const Key1 =  process.env.REACT_APP_KEY_1;
 const Key2 =  process.env.REACT_APP_KEY_2;
 const Key4 =  process.env.REACT_APP_KEY_3;
 
-console.log(Key1 , Key2 , Key4)
+
 
 
 const Contact = ({ lang }) => {
