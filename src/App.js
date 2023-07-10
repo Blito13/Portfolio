@@ -21,9 +21,9 @@
                       
                        {<Contact  lang = {'ES'} ></Contact>}
                         
-                        {<About lang = {'ES'} ></About>}
+                       {/*  {<About lang = {'ES'} ></About>} */}
 
-                        {<Proyects lang = {'ES'} ></Proyects>}
+                      {/*   {<Proyects lang = {'ES'} ></Proyects>} */}
                 <Footer />
               
                 

@@ -35,13 +35,7 @@
       "id": 8,
       "side": "right",
       "subtitle": "Proyectos",
-      "text": "<ul><li><strong>E-commerce</strong><br /><a target='_blank' rel='noopener'  href='https://bluebirdstore.vercel.app/'>Proyecto final de Henry<br /> en metodología SCRUM</a><br /><br />"
-    },
-    {
-      "id" : 9 ,
-      "side" :"left",
-      "subtitle" : "Sobre mi",
-      "text" : "<article> </article>"
+      "text": "<ul><li><strong>E-commerce</strong><br /><a target='_blank' rel='noopener'  href='https://bluebirdstore.vercel.app/'>Proyecto final de Henry<br /> en metodología SCRUM</a><br /><br /><ul><li><strong>Recipedia(CRUD)</strong><br /><a target='_blank' rel='noopener'  href='https://recipedia.onrender.com'>Proyecto individual de Henry <br /></a><br /><br />"
     }
   ]
 }

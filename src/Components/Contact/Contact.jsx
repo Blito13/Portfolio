@@ -2,18 +2,13 @@ import React, { useState , useRef} from "react";
 /* import axios from "axios"; */
 import Infobox from "../InfoBox/Infobox";
 import style from "./Contact.module.css";
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
+const Key1 =  process.env.REACT_APP_KEY_1;
+const Key2 =  process.env.REACT_APP_KEY_2;
+const Key4 =  process.env.REACT_APP_KEY_3;
 
-console.log(process.env.REACT_APP_KEY_1);
-const Key1 =  "service_opmxpez"
-const Key2 =  "template_1ke7351"
-const Key4 = "VBt-uVVpNO3xMLsbw"
-/* service_opmxpez
-Contact.jsx:10 template_1ke7351
-Contact.jsx:11 VBt-uVVpNO3xMLsbw */
-/* console.log(Key1)
-console.log(Key2)
-console.log(Key4) */
+
+
 
 const Contact = ({ lang }) => {
   const form = useRef();
@@ -31,16 +26,14 @@ const Contact = ({ lang }) => {
     e.preventDefault();
     setContacto(contacto === "closed" ? "open" : "open");
     document.documentElement.style.overflow = "hidden";
-    document.getElementById("myH1").style.display = "none";
-    document.getElementById("myH2").style.display = "none";
+   
   };
 
   const handleClickClose = (e) => {
     e.preventDefault();
     setContacto(contacto === "open" ? "closed" : "closed");
     document.documentElement.style.overflow = "auto";
-    document.getElementById("myH1").style.display = "";
-    document.getElementById("myH2").style.display = "";
+
     setConfirm(null);
   };
  
