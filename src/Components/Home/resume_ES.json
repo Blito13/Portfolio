@@ -18,12 +18,7 @@
       "subtitle": "Educación",
       "text": "- Henry Bootcamp (800 hs) <p><ul className='resume_list'><li>Algoritmos, estructuras de datos, Javascript ES6+,  React, Redux, Node, Express, Postgres, Sequalize, Webpack,</li></ul>-  Integral Capacitando Instituto de formación técnica (90hs)(mar. 2021 - ago. 2021) <br> fundamentos de programacion e introduccion a base de datos "
     },
-    {
-      "id": 5,
-      "side": "left",
-      "subtitle": "Capacitaciones ,Test y mas",
-      "text" : "<br><br>"
-    },
+   
     {
       "id": 6,
       "side": "right",
@@ -41,6 +36,12 @@
       "side": "right",
       "subtitle": "Proyectos",
       "text": "<ul><li><strong>E-commerce</strong><br /><a target='_blank' rel='noopener'  href='https://bluebirdstore.vercel.app/'>Proyecto final de Henry<br /> en metodología SCRUM</a><br /><br />"
+    },
+    {
+      "id" : 9 ,
+      "side" :"left",
+      "subtitle" : "Sobre mi",
+      "text" : "<article> </article>"
     }
   ]
 }

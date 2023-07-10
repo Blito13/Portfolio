@@ -15,15 +15,15 @@
             const store =  generateStore();
             return ( 
                 <Provider  store={store}>
-                    {<NavBar lang = {'ES'} ></NavBar>}
+                    {<NavBar lang = {'ES'}></NavBar>}
         
                       {<Home lang={'ES'}  />} 
-       
+                      
                        {<Contact  lang = {'ES'} ></Contact>}
-                        {<Proyects lang = {'ES'}></Proyects>}
                         
                         {<About lang = {'ES'} ></About>}
 
+                        {<Proyects lang = {'ES'} ></Proyects>}
                 <Footer />
               
                 

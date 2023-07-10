@@ -42,10 +42,6 @@ const Home = ({ lang }) => {
                 })}
                 <div className={`${style.divisionBar} bgColorDiv `}>
                 </div>
-                <br></br>
-                <Carusel>
-                </Carusel>
-              
           </div>
           <div className={style.column}>
                 {resume &&

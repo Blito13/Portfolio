@@ -144,8 +144,8 @@
 }
 @media (max-width: 799.9px) {
   .contact {
-    right: 0;
-    left: 2;
+    right: 1;
+    left: 0;
     bottom: 0;
     margin: auto;
     padding: 10px;
